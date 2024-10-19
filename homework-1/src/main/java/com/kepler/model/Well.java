@@ -1,7 +1,6 @@
 package com.kepler.model;
 
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -9,7 +8,12 @@ import java.util.UUID;
 /**
  * Entity representing a Well with associated measurements like flow, temperature, and pressure.
  */
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+@ToString
 @Builder
 public class Well {
     private UUID uuid;
